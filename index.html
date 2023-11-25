@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Planets fact site</title>
+  
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <h1 class="header__title">THE PLANETS</h1>
+      <img  class="header__hamburger-menu" src="assets/icon-hamburger.svg" alt="Hamburger menu" aria-label="Open Menu">
+    </div>
+    <nav class="header__mobile-menu display-none">
+      <ul class="header__mobile-menu__list">
+        <li class="header__mobile-menu-item" data-planet="mercury"><span class="header__mobile-menu-circle header__mobile-menu-circle--mercury"></span><span>Mercury</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item" data-planet="venus"><span class="header__mobile-menu-circle header__mobile-menu-circle--venus"></span><span>Venus</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item" data-planet="earth"><span class="header__mobile-menu-circle header__mobile-menu-circle--earth"></span><span>Earth</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item" data-planet="mars"><span class="header__mobile-menu-circle header__mobile-menu-circle--mars"></span><span>Mars</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item" data-planet="jupiter"><span class="header__mobile-menu-circle header__mobile-menu-circle--jupiter"></span><span>Jupiter</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item" data-planet="saturn"><span class="header__mobile-menu-circle header__mobile-menu-circle--saturn"></span><span>Saturn</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item" data-planet="uranus"><span class="header__mobile-menu-circle header__mobile-menu-circle--uranus"></span><span>Uranus</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+        <li class="header__mobile-menu-item header__mobile-menu-item--no-bottom-border" data-planet="neptune"><span class="header__mobile-menu-circle header__mobile-menu-circle--neptune"></span><span>Neptune</span> <img class="header__mobile-menu-chevron" src="assets/icon-chevron.svg" alt=""></li>
+      </ul>
+    </nav>
+    <nav class="header__menu">
+      <ul class="header__menu__list">
+        <li class="header__menu-item" data-planet="mercury">Mercury</li>
+        <li class="header__menu-item" data-planet="venus">Venus</li>
+        <li class="header__menu-item" data-planet="earth">Earth</li>
+        <li class="header__menu-item" data-planet="mars">Mars</li>
+        <li class="header__menu-item" data-planet="jupiter">Jupiter</li>
+        <li class="header__menu-item" data-planet="saturn">Saturn</li>
+        <li class="header__menu-item" data-planet="uranus">Uranus</li>
+        <li class="header__menu-item" data-planet="neptune">Neptune</li>
+      </ul>
+    </nav>
+      <ul class="header__mobile-fact-buttons">
+        <li class="header__button"><button class="header__button-item header__button-item--active" data-button="overview">Overview</button></li>
+        <li class="header__button"><button class="header__button-item" data-button="structure">Structure</button></li>
+        <li class="header__button"><button class="header__button-item" data-button="geology">Surface</button></li>
+      </ul>
+  </header>
+  <main class="main">
+    <div class="main__images">
+      <img class="main__image" src="assets/planet-mercury.svg" alt="Planet mercury">
+      <img class="main__image-geology display-none" src="assets/geology-mercury.png" alt="Planet's surface">
+    </div>
+    <div class="main__text-content">
+      <div class="main__left-column">
+        <h2 class="main__title">Mercury</h2>
+        <p class="main__paragraph">
+          Mercury is the smallest planet in the Solar System and the closest 
+          to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+          shortest of all the Sun's planets. Mercury is one of four terrestrial 
+        planets in the Solar System, and is a rocky body like Earth.
+      </p>
+      <div class="main__source">
+        Source : 
+        <a class="main__soucre-link" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia
+          <img src="assets/icon-source.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 
+      <div class="main__right-colum">
+        <button>01 Overview</button>
+        <button>02 Internal Structure</button>
+        <button>03 Surface Geology</button>
+      </div>
+     -->
+  </div>
+
+
+  </main>
+
+  <aside class="facts">
+    <ul>
+      <li class="facts__fact">
+        <span class="facts__label">Rotation Time</span>
+        <span class="facts__value">58.6 Days</span>
+      </li>
+      <li class="facts__fact">
+        <span class="facts__label">Revolution Time</span>
+        <span class="facts__value">87.97 Days</span>
+      </li>
+      <li class="facts__fact">
+        <span class="facts__label">Radius</span>
+        <span class="facts__value">2,439.7 KM</span>
+      </li>
+      <li class="facts__fact">
+        <span class="facts__label">Average Temp.</span>
+        <span class="facts__value">430°c</span>
+      </li>
+    </ul>    
+  </aside>
+</body>
+</html>
